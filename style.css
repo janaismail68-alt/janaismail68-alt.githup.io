@@ -76,7 +76,7 @@ h1, h2 {
 }
 
 /* ===== Hero (Home) ===== */
-.hero {
+.home {
   height: 100vh;
   background-image: url("course1.jpg");
   background-size: cover;
@@ -267,11 +267,11 @@ footer {
     grid-template-columns: 1fr;
   }
 
-  .hero {
+  .home {
     height: 70vh;
   }
 }
-.hero h1,p{
+.home h1,p{
   
   color:white;
 }
