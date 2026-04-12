@@ -1,7 +1,6 @@
 /* ===== Reset ===== */
 * {
   margin: 0;
-  padding: 0;
   box-sizing: border-box;
   font-family: Arial, sans-serif;
 }
@@ -11,7 +10,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-
+  font-size: clamp(14px, 2.5vw, 18px);
   background-image: url("course1.jpg");
   background-size: cover;
   background-position: center;
@@ -71,12 +70,27 @@ section {
 }
 
 /* ===== Titles ===== */
-h1, h2 {
+
+h1 {
+  font-size: clamp(26px, 6vw, 42px);
   margin-bottom: 20px;
 }
 
+h2 {
+  font-size: clamp(22px, 5vw, 32px);
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: clamp(18px, 4vw, 24px);
+}
+p {
+  font-size: clamp(14px, 3vw, 18px);
+  line-height: 1.6;
+}
+
 /* ===== Hero (Home) ===== */
-.home {
+.home{
   height: 100vh;
   background-image: url("course1.jpg");
   background-size: cover;
@@ -119,7 +133,9 @@ h1, h2 {
   border-radius: 10px;
   transition: 0.3s;
 }
-
+button,.btn {
+  font-size: clamp(14px, 3vw, 16px);
+}
 .btn:hover {
   background-color: #8a2be2;
 }
@@ -266,7 +282,13 @@ footer {
   .contact-container {
     grid-template-columns: 1fr;
   }
+  main {
+    padding: 20px 10px;
+  }
 
+  section {
+    padding: 20px;
+  }
   .home {
     height: 70vh;
   }
@@ -311,7 +333,7 @@ footer {
 .logo {
   color: white;
   font-weight: 900;
-  font-size: 30px;
+  font-size: 32px;
   letter-spacing: 1px;
   transition: 0.3s;
   text-transform: uppercase;
@@ -325,6 +347,9 @@ footer {
 nav {
   display: flex;
   gap: 20px;
+}
+nav a {
+  font-size: clamp(14px, 3vw, 16px);
 }
 .course-card:hover {
   transform: translateY(-10px) scale(1.02);
